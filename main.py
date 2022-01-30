@@ -48,7 +48,7 @@ def bot():
 
 	else:
 		api_key = services.fetch_apikey('wolfram-alpha')
-		if api_key == None:
+		if api_key is None:
 			output = 'Wolfram alpha api key needed, check docs'
 		else:
 			output = services.chatbot(api_key, incoming_msg)
